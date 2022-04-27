@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <ToastContainer position={"top-right"}>
-        <Toast type={"success"} content={"toast!!!"} position={"top-center"} />
+        <Toast type={"warn"} content={"toast!!!"} position={"top-center"} />
       </ToastContainer>
 
       <h1>hello world</h1>
