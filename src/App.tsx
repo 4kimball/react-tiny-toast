@@ -4,8 +4,10 @@ import { ToastContainer, Toast } from "./components";
 const App = () => {
   return (
     <>
-      <ToastContainer />
-      <Toast type={"success"} content={"toast!!!"} position={"top-center"} />
+      <ToastContainer position={"top-right"}>
+        <Toast type={"success"} content={"toast!!!"} position={"top-center"} />
+      </ToastContainer>
+
       <h1>hello world</h1>
     </>
   );

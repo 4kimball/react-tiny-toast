@@ -1,3 +1,40 @@
 .toast-container {
   position: fixed;
+
+  width: var(--toast-width);
+
+  box-sizing: border-box;
+  z-index: var(--toast-zIndex);
+
+  &-top-left {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &--top-center {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--top-right {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &--bottom-left {
+    bottom: 2rem;
+    left: 1rem;
+  }
+
+  &--bottom-center {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--bottom-right {
+    bottom: 2rem;
+    right: 1rem;
+  }
 }
