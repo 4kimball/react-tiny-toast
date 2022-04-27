@@ -1,0 +1,11 @@
+.toast {
+  width: var(--toast-width);
+  height: var(--toast-min-height);
+
+  border: 1px solid var(--toast-light-gray);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
