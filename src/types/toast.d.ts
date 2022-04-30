@@ -10,6 +10,5 @@ export type ToastType = "success" | "warn" | "error";
 
 export interface ToastProps {
   type: ToastType;
-  content: string;
   position: ToastPosition;
 }
