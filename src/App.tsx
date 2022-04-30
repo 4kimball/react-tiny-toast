@@ -3,7 +3,11 @@ import { ToastProvider } from "./components/ToastProvider";
 import { toast } from "./core/toast";
 const App = () => {
   const handleClick = () => {
-    toast("toast!!!", { type: "success", position: "top-right" });
+    toast("toast!!!", {
+      type: "error",
+      position: "top-right",
+      duration: 5000,
+    });
   };
   return (
     <>

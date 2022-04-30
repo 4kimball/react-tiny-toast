@@ -10,7 +10,7 @@ const toast = (content: string, props:ToastProps) => {
         render(<ToastContainer content={content} props={props}/>, toastProvider);
         setTimeout(() => {
             render(<></>, toastProvider);
-        }, 3000)
+        }, props.duration ?? 3000)
         
     }
 }
