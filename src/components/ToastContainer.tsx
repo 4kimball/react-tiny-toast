@@ -13,7 +13,7 @@ export const ToastContainer: FC<Props> = ({content, props}) => {
 
   const  { position } = props;
   const getClassName = (position: ToastPosition): string => {
-    return cx(`toast-container`, `toast-container--${position}`);
+    return cx(`toast-container`, `toast-container--${position}`, `toast--container__slide-enter--${position}`);
   };
 
   return <div className={getClassName(position)}>

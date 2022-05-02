@@ -1,0 +1,79 @@
+@mixin transform {
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    @include transform;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    @include transform;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translate3d(0, -110%, 0);
+    visibility: visible;
+  }
+  to {
+    @include transform;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translate3d(0, 110%, 0);
+    visibility: visible;
+  }
+  to {
+    @include transform;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    @include transform;
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(110%, 0, 0);
+  }
+}
+
+.toast--container__slide-enter {
+  &--bottom-right,
+  &--top-right {
+    animation: slideInRight 0.5s 1;
+  }
+
+  &--bottom-left,
+  &--top-left {
+    animation: slideInLeft 0.5s 1;
+  }
+
+  &--top-center {
+    animation: slideInTop 0.5s 1;
+  }
+
+  &--bottom-center {
+    animation: slideInBottom 0.5s 1;
+  }
+}
+
+.toast--container__slide-exit {
+  &--top-right {
+    animation: slideOutRight 0.5s 1;
+  }
+}
