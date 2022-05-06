@@ -5,7 +5,7 @@ const App = () => {
   const handleClick = () => {
     toast("toast!!!", {
       type: "error",
-      position: "bottom-center",
+      position: "top-right",
       duration: 5000,
     });
   };
